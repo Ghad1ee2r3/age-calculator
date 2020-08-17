@@ -5,7 +5,8 @@ def check_birthdate(year, month, day):
 	year= int(year)
 	month= int(month)
 	day= int(day)
-	if year>=2019 and month >=9 and day >=4:
+	today = datetime.today()
+	if year>today.year :
 		return False
 	else:
 		return True
