@@ -6,10 +6,27 @@ def check_birthdate(year, month, day):
 	month= int(month)
 	day= int(day)
 	today = datetime.today()
-	if year>today.year :
-		return False
-	else:
+	#dU=datetime.datetime(year, month, day)
+	#if du> today:
+	#	return False
+	#else:
+	#	return True
+
+	#if year==2020 and month>today.month and day>today.day:
+	#			return False
+
+	if year<today.year  :
 		return True
+	elif month<today.month:
+		return True
+	else:
+		if day<today.day:
+			return True
+		else:
+			return False
+
+	#else:
+	#	return True
 
 
 def calculate_age(year, month, day):
